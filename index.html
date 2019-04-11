@@ -1,0 +1,24 @@
+<html>
+<script>
+
+var sayi;
+var kolon=prompt("Kaç kolon oynamak istersiniz?");
+for(var i=1;i<=kolon;i++)
+{
+var sayac=0;
+var sayisal=new Array();
+while(sayac<6)
+{
+	sayi=Math.round(Math.random()*49)+1;
+	if(sayisal.indexOf(sayi)==-1)
+	{
+		sayisal.push(sayi);
+		sayac++;
+	}
+}
+document.write(sayisal);
+document.write("<br>");
+document.write("<br>");
+}
+</script>
+</html>
